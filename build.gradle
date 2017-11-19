@@ -28,7 +28,11 @@ ext {
 }
 
 dependencies {
+
+    compile group: 'io.prometheus', name: 'simpleclient_spring_boot', version: '0.1.0'
+    compile 'de.codecentric:spring-boot-admin-starter-client:1.5.0'
 	compile('org.springframework.cloud:spring-cloud-config-server')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
