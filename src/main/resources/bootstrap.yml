@@ -39,15 +39,15 @@ spring:
   profiles: docker
   boot:
     admin:
-      url: http://admin_server:9000
+      url: http://admin-server:9000
 
 eureka:
   instance:
-    hostname: config_server
+    hostname: config-server
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka_server:8761/eureka/
+      defaultZone: http://eureka-server:8761/eureka/
 
 
